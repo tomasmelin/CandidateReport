@@ -1,0 +1,129 @@
+\documentclass{acm_proc_article-sp}
+\usepackage[utf8]{inputenc}
+
+\hyphenation{authentication}
+\hyphenation{cryptography}
+\hyphenation{symmetric}
+\hyphenation{asymmetric}
+\hyphenation{vulnerable}
+\begin{document}
+
+%Vilka hot finns mot krypteringsmetoder som använder sig av asymmetrisk kryptering?
+\title{What vulnerbilities and threats exists for public-key cryptography?}
+\numberofauthors{2} 
+\author{
+\alignauthor
+Tomas Melin\\
+        \affaddr{Linköping University}\\
+        \affaddr{Linköping, Sweden}\\
+        \email{tomme578@student.liu.se}
+% 2nd. author
+\alignauthor
+Tomas Vidhall\\
+        \affaddr{Linköping University}\\
+        \affaddr{Linköping, Sweden}\\
+        \email{tomvi780@student.liu.se}
+}
+\date{17 March 2014}
+
+\maketitle
+\begin{abstract}
+%% SKRIV ABSTRAKT
+[Awesome Text]
+\end{abstract}
+
+\keywords{ACM proceedings, \LaTeX, text tagging} % NOT required for Proceedings
+
+\section{Introduction}
+%Skriv inledning här!
+
+\subsection{Motivation}
+%SKRIV MOTIVATION HÄR
+[Awesome Text]
+
+\subsection{Purpose}
+%SKRIV SYFTE
+[Awesome Text]
+
+\subsection{Questions of Interest}
+
+\begin{itemize}
+    \item %Hur fungerar asymmetrisk kryptering? 
+    How does asymmetric cryptography work?
+    \item %Hur har asymmetrisk kryptering historiskt sett förändrats då olika implementationer har knäckts?
+    How has asymmetric cryptography implementations changed through history?
+    \begin{itemize}
+        \item Has it been affected by cracked implementations?
+    \end{itemize}
+    
+    \item %Vilka sorts attacker är asymmetriska krypteringsmetoder sårbar mot? 
+    What attacks are asymetric cryptographys vulnerable to?
+    \begin{itemize} 
+        \item %Vad kan man göra som ‘Man in the Middle’?
+        What weaknesses can a 'Man in the Middle' take advantage of?
+        \item %Kan man motverka dessa attacker med autentisering?
+        Is it possible to prevent these attacks through authentication?
+    \end{itemize}
+    
+    \item %Hur fungerar Diffie-Hellmans metod för nyckelutbyte?
+    How does the Diffie-Hellman key exchange work?   
+    \begin{itemize}
+        \item %Vilka sorters attacker är Diffie-Hellman sårbar mot?
+        What attacks is Diffie-Hellman vulnerable to?
+        \item %Varför vill man kryptera symmetriskt när man redan kan kommunicera med asymmetrisk kryptering? 
+        What is the benefit of using symmetric cryptography compared to asymetric cryptography?
+        \item Why do we use Diffie-Hellman to convert our asymmetric crypto to a symmetric one?
+    \end{itemize}
+    
+\end{itemize}
+
+\subsection{Limitations}
+%SKRIV AVGRÄNSNINGAR HÄR
+[Awesome Text]
+
+\section{Background}
+%SKRIV BAKGRUND HÄR (VID BEHOV) 
+[Awesome Text]
+
+\section{Theory}
+%SKRIV VAD VI HAR LÄST
+[Awesome Text]
+
+\section{Method}
+%SKRIV METOD
+[Awesome Text]
+
+\section{Results}
+%SKRIV RESULTAT
+[Awesome Text]
+
+\section{Discussion}
+%SKRIV FIN DISKUSSION
+[Awesome Text]
+
+\section{Conclusions}
+%SKRIV FINA SLUTSATSER
+
+\section{Bibliography}
+
+\subsection{Citations}
+
+
+% The following two commands are all you need in the
+% initial runs of your .tex file to
+% produce the bibliography for the citations in your paper.
+\bibliographystyle{abbrv}
+%\bibliography{sigproc}  % sigproc.bib is the name of the Bibliography in this case
+% You must have a proper ".bib" file
+%  and remember to run:
+% latex bibtex latex latex
+% to resolve all references
+%
+% ACM needs 'a single self-contained file'!
+%
+%APPENDICES are optional
+%\balancecolumns
+
+%\balancecolumns
+% That's all folks!
+\end{document}
