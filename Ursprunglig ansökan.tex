@@ -1,0 +1,65 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Vilka hot finns mot krypteringsmetoder som använder sig av asymmetrisk kryptering?}
+\author{
+Tomas Melin \\ tomme578 \and
+Tomas Vidhall \\ tomvi780
+}
+
+\date{2012-02-14}
+    
+\begin{document}
+\maketitle
+
+\section*{Bakgrund}
+Asymmetrisk kryptering är en metod för att kommunicera säkert. Detta fungerar genom att man har två nycklar, en publik och en privat. 
+Den publika nyckeln är känd för alla men den privata måste vara hemlig. Alla kan kryptera meddelanden med en publik nyckel men de kan bara dekrypteras med hjälp av den privata nyckeln. Denna metod används idag inom bland annat RSA-kryptering. Problem som kan uppstå med denna metod är autentisering av publika nycklar. 
+
+\section*{Syfte}
+Vi vill få reda på mer om hur man kan kryptera data på ett osäkert nätverk genom att använda asymmetrisk kryptering. Vi vill också ta reda på hur säker denna metod är och om vissa hot fortfarande finns kvar. 
+
+\section*{Motivation}
+Vi tycker att konceptet med privata och publika nycklar är väldigt snyggt. Vi vet också att det är “omöjligt” att läsa meddelanden som krypterats med någon annans publika nyckel. Det vi undrar är vilka nackdelar som finns och hur man kan utnyttja dessa.  
+
+\pagebreak
+
+\section*{Frågeställningar}
+\begin{itemize}
+    \item Hur fungerar asymmetrisk kryptering?
+    \item Hur har asymmetrisk kryptering historiskt sett förändrats då olika implementationer har knäckts?
+    \item Vilka sorts attacker är asymmetriska krypteringsmetoder sårbar mot?
+    \begin{itemize} 
+        \item Vad kan man göra som ‘Man in the Middle’?
+        \item Kan man motverka dessa attacker med autentisering?
+    \end{itemize}
+    
+    \item Hur fungerar Diffie-Hellmans metod för nyckelutbyte?
+     \begin{itemize}
+        \item Vilka sorters attacker är Diffie-Hellman sårbar mot?
+        \item Varför vill man kryptera symmetriskt när man redan kan kommunicera med asymmetrisk kryptering? 
+    \end{itemize}
+\end{itemize}
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
