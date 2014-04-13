@@ -1,2 +1,3 @@
-StoryLatex
+CandidateReport
+  Written in LaTeX
 ==========
