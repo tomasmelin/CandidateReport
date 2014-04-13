@@ -4,6 +4,7 @@
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{mathtools}
+\usepackage{enumitem}
 %\hyphenation{authentication}
 %\hyphenation{cryptography}
 %\hyphenation{symmetric}
@@ -28,7 +29,7 @@ Tomas Vidhall\\
         \affaddr{Linköping, Sweden}\\
         \email{tomvi780@student.liu.se}
 }
-\date{April 12 2014}
+\date{30 March 2014}
 % General Comments:
 %   
 %
@@ -39,19 +40,20 @@ Tomas Vidhall\\
 %-------------------------------------------------------------
 \begin{abstract}
 %% SKRIV ABSTRAKT
-[Awesome Text]
 \end{abstract}
 
-\keywords{public key cryptography}
+\keywords{public key cryptography, asymmetric cryptography}
 
 %-------------------------------------------------------------
 %   INTRODUCTION
 %-------------------------------------------------------------
 \section{Introduction}
-% Förklaring vad 'public-key cryptography' är.
-The public-key cryptography, or asymmetric encryption as it is also referred to, is a procedure with the main objective to ensure privacy or confidentiality. The procedure uses two keys, public and private key. Each person has a public key that is used to encrypt messages and can be shared in any possible way. Each user also has a private key which is only known to that specific user. If a user receives a message that is encrypted with his public key he can decrypt it with his private key and no one else can decrypt it. \\
-This can be explained further using mathematical notations. An entity has a public key $e$ and a corresponding private key $d$. For a system to be secure, it has to be fairly impossible to compute $d$, given $e$. The public key defines an encryption transformation $E_e$ and the private key defines the associated decryption transformation $D_d$. This means that if an entity $B$ wants to send a message to $A$, it has to retrieve a copy of $A$'s public key $e$ and use $E_e$ to obtain the cipher text $c=E_e(m)$, where $m$ is the message in plain text, and send $c$ to $A$. Once $A$ has received the cipher text $c$, $A$ uses $D_d$ with the private key $d$ to decrypt the cipher text into the original message in plain text $m=D_d(c)$. \cite{handcrypt}\\
-By the above description it is clear that using public-key encryption on its own, does not provide data origin authentication, due to the fact that $A$'s encryption transformation is public information. Data origin authentication can be described as a  mechanism where the data is authenticated. \cite{handcrypt} \pagebreak
+The public-key cryptography, or asymmetric encryption as it is also referred to, is a procedure with the main objective to ensure privacy or %AND???
+confidentiality. The procedure uses two keys, public and private key. Each person has a public key that is used to encrypt messages and can be shared in any possible way. Each user also has a private key which is only known to that specific user. If a user receives a message that is encrypted with his public key he can decrypt it with his private key and no one else can decrypt it. \\
+This can be further explained using mathematical notations. An entity has a public key $e$ and a corresponding private key $d$. For a system to be secure, it has to be fairly impossible to compute $d$, given $e$. The public key defines an encryption transformation $E_e$ and the private key defines the associated decryption transformation $D_d$. This means that if an entity $B$ wants to send a message to $A$, it has to retrieve a copy of $A$'s public key $e$ and use $E_e$ to obtain the cipher text $c=E_e(m)$, where $m$ is the message in plain text, and send $c$ to $A$. Once $A$ has received the cipher text $c$, $A$ uses $D_d$ with the private key $d$ to decrypt the cipher text into the original message in plain text $m=D_d(c)$. \cite{handcrypt}\\
+
+%   TA UPP NÅGON ANNASTANS? 
+%By the above description it is clear that using public-key encryption on its own, does not provide data origin authentication, due to the fact that $A$'s encryption transformation is public information. Data origin authentication can be described as a  mechanism where the data is authenticated. \cite{handcrypt} \pagebreak
 
 %Asymmetrisk kryptering är en metod för att kommunicera säkert. Detta fungerar genom att man har två nycklar, en publik och en privat. 
 %Den publika nyckeln är känd för alla men den privata måste vara hemlig. Alla kan kryptera meddelanden med en publik nyckel men de kan bara dekrypteras med hjälp av den privata nyckeln. Denna metod används idag inom bland annat RSA-kryptering. Problem som kan uppstå med denna metod är autentisering av publika nycklar. 
@@ -162,11 +164,11 @@ There have been several public-key encryption schemes throughout the history but
     is the first concrete realization of a public-key cryptographic system. It is based on the mathematical problem called the \textit{superincreasing subset sum problem}. It differs from RSA through the cryptation being only one-way. The public key is only used for encryption and the private key is only used for decryption. You can not get a message encrypted with the private key and decrypt it using the public key. Therefore it can't be used for cryptographic signing. Key generation uses the following steps.
     \begin{enumerate}
     \item An integer $n$ is fixed as the length of the public key.
-    \item Choose a superincreasing sequence ($b_1$,$b_2$,...,$b_n$).
-    \item Choose a integer $M$ such that $M$ > $b_1$+$b_2$+...+$b_n$.
-    \item Choose another integer $W$ such that $1 \leq W \leq M - 1$ and gcd($W$,$M$) = 1.
-    \item Select a random permutation $\pi$ of the integers \{1,2,...,$n$\}.
-    \item Compute $a_i$ = $Wb_{\pi(i)} \bmod M$ for $i$ = 1,2,...,$n$.
+    \item Choose a superincreasing sequence $(b_1,b_2,...,b_n)$.
+    \item Choose a integer $M$ such that $M > b_1+b_2+...+b_n$.
+    \item Choose another integer $W$ such that $1 \leq W \leq M - 1$ and gcd$(W,M) = 1$.
+    \item Select a random permutation $\pi$ of the integers ${1,2,...,n}$.
+    \item Compute $a_i = Wb_{\pi(i)} \bmod M$ for $i = 1,2,...,n$.
     \item The public key is ($a_1$,$a_2$,...,$a_n$) and the private key is ($\pi$,$M$,$W$,($b_1$,$b_2$,...,$b_n$)).
     \end{enumerate}
     
@@ -188,6 +190,10 @@ There have been several public-key encryption schemes throughout the history but
         %HUR REFERERA TILL ALGORITM?
     \end{enumerate}
     \end{description}
+    
+    %%BROKEN SHIT, TA UPP DET TACK
+    
+    
 %   ELGAMAL   
     \subsubsection{ElGamal public-key encryption}
     also known as the Diffie-Hellman key exchange. The security of ElGamal is based on the intractability of the discrete logarithm problem and the Diffie-Hellman problem, as \cite{handcrypt} wrote on p.294. Two versions of the ElGamal public-key encryption will be described, the basic and the generalized version. % NÄMN SKILLNAD?: The difference between them is that the generalized version uses Groups, which is ... % FÖRKLARA
@@ -259,8 +265,8 @@ A man in the middle attack is an attack which lives on the problem of authentica
 %-------------------------------------------------------------
 %   METHOD
 %-------------------------------------------------------------
-\section{Method} %Redo
-In order to attain the knowledge to write this report, a literature study will be performed. The literature study will have the goal of finding sources of relevant information and it will be performed by searching for research papers online and on the recommended sources given on the course page. When material is found which appears to be relevant, it will be analyzed to find if it is legitimate to use in this report. 
+\section{Method}
+In order to attain the knowledge to write this report, a literature study will be performed. The literature study will have the goal of finding sources of relevant information and it will be performed by searching for research papers online. When material is found which appears to be relevant, it will be analyzed to find if it is legitimate to use in this report.
 
 %Initially we performed a literature study in order to find sources of relevant information for our report. We did this by searching online and in the recommended literature on the course homepage.  Once we found literature which appealed to us, we analyzed the material to find out if it was legitimate to use in our report. In the following weeks we proceeded by structuring our report in sections which were recommended on the course web page.
 
@@ -269,44 +275,46 @@ In order to attain the knowledge to write this report, a literature study will b
 %   RESULTS
 %-------------------------------------------------------------
 \section{Results}
-Due to the fact that encryption transformation is public information, leads to the lack of data origin authentication in public-key encryption, where data origin authentication can be described as a mechanism where the data is authenticated and proven to legitimate. The next sections describe what available solutions exists. % TODO
+Since encryption transformation is public information, leads to the lack of data origin authentication in public-key encryption, where data origin authentication can be described as a mechanism where the data is authenticated and proven to legitimate. The next sections describe what available solutions exists. 
 
 \subsection{Certificate authorities}
-In order to authenticate that a website is who it say it is,
-the currently used solution is to use certificates. A certificate
-normally contains a number of fields, such as: 
-\begin{itemize}
-    \item id,
-    \item subject, 
-    \item what signature algorithm has been used to create
-    \item the signature,
+In order connect a website to a person or an organization, i.e. to authenticate that a website is who it say it is, the currently used solution is to use certificates. A public-key certificate normally contains a number of fields, such as: 
+\begin{itemize}[noitemsep]
+    \item id - identifies the certificate,
+    \item subject - the entity which the certificate was created for, 
     \item signature,
-    \item issuer,
+    \item the signature algorithm which has been used to create the signature,
+    \item issuer - the certificate authority which issued the certificate,
     \item valid-from,
     \item valid-to,
-    \item what purpose the key was intended for,
-    \item public key, fingerprint algorithm,
-    \item fingerprint.
+    \item what purpose the certificate was intended for,
+    \item public key, 
+    \item fingerprint - the hash of the public-key certificate,
+    \item fingerprint algorithm - the algorithm which was used to create the fingerprint.
 \end{itemize}
-The creators and holders of these certificates are called certificate authorities (CA's).
+The creators and holders of these certificates are called certificate authorities (CA's). 
 
-\subsection{Bitcoin}
-About bitcoin...
+\subsection{Distributed consensus algorithm}
+\subsubsection{Bitcoin}
+% Mining
+% SHA-256 
+\subsubsection{Block-Chain Algorithm}
+
 \subsection{Web of Trust}
+
+
 
 %-------------------------------------------------------------
 %   CONCLUSIONS
 %-------------------------------------------------------------
 \section{Conclusions}
 %SKRIV FINA SLUTSATSER
-[Awesome Text]
 
 %-------------------------------------------------------------
 %   DISCUSSION
 %-------------------------------------------------------------
 \section{Discussion}
-%SKRIV FIN DISKUSSION
-Idea: By the above description it is clear that using public-key encryption on its own, does not provide data origin authentication, due to the fact that $A$'s encryption transformation is public information. Data origin authentication can be described as a  mechanism where the data is authenticated. 
+By the above arguments it is clear that using public-key encryption on its own, does not provide data origin authentication, due to the fact that the encryption transformation is public information, where data origin authentication can be described as a mechanism where the data is authenticated. 
 
 % The following two commands are all you need in the
 % initial runs of your .tex file to
