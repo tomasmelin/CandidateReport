@@ -265,8 +265,8 @@ A man in the middle attack is an attack which lives on the problem of authentica
 %-------------------------------------------------------------
 %   METHOD
 %-------------------------------------------------------------
-\section{Method}
-In order to attain the knowledge to write this report, a literature study will be performed. The literature study will have the goal of finding sources of relevant information and it will be performed by searching for research papers online. When material is found which appears to be relevant, it will be analyzed to find if it is legitimate to use in this report.
+\section{Method} % NYTT
+In order to attain the knowledge to write this report, a literature study will be performed. The literature study will have the goal of finding sources of relevant information and it will be performed by searching for research papers online. When material is found which appears to be relevant, it will be analyzed to find if it is legitimate to use in this report. The legitimate material we find will be investigated carefully in order to find applicable solutions for our main goal.   
 
 %Initially we performed a literature study in order to find sources of relevant information for our report. We did this by searching online and in the recommended literature on the course homepage.  Once we found literature which appealed to us, we analyzed the material to find out if it was legitimate to use in our report. In the following weeks we proceeded by structuring our report in sections which were recommended on the course web page.
 
@@ -274,8 +274,9 @@ In order to attain the knowledge to write this report, a literature study will b
 %-------------------------------------------------------------
 %   RESULTS
 %-------------------------------------------------------------
-\section{Results}
-Since encryption transformation is public information, leads to the lack of data origin authentication in public-key encryption, where data origin authentication can be described as a mechanism where the data is authenticated and proven to legitimate. The next sections describe what available solutions exists. 
+\section{Results} % NYTT
+Since encryption transformation is public information, it results in the lack of data origin authentication in public-key encryption, where data origin authentication can be described as a mechanism where the data is authenticated and proven to legitimate. \cite{handcrypt} 
+The next sections will describe what available solutions exists. 
 
 \subsection{Certificate authorities}
 In order connect a website to a person or an organization, i.e. to authenticate that a website is who it say it is, the currently used solution is to use certificates. A public-key certificate normally contains a number of fields, such as: 
@@ -295,12 +296,15 @@ In order connect a website to a person or an organization, i.e. to authenticate 
 The creators and holders of these certificates are called certificate authorities (CA's). 
 
 \subsection{Distributed consensus algorithm}
+
 \subsubsection{Bitcoin}
 % Mining
 % SHA-256 
 \subsubsection{Block-Chain Algorithm}
 
-\subsection{Web of Trust}
+\subsection{Web of Trust} % nyckelutbyte
+Web of trust is one solution to the problem with authentication in public-key encryption systems and is an alternative to the centralized trust model of public-key infrastructure which involved certificate authorities. The idea of the Web of trust-concept is that searching for another node in the network which has signed, i.e. confirmed that the public-key is legitimate. If such a node, $N_1$ is found, a path can be visualized from the initial node to $N_1$, together with the final node, which was the node to be verified. Since the path from initial node to the final node was found, the public key is verified. \\
+Another functionality which can be used in Web of trust, is that nodes vote, instead of signing. When implementing the votes, some nodes may get higher priority during the voting due to the fact that some nodes can be partially trusted and other nodes can be fully trusted. \cite{rubin}
 
 
 
@@ -314,8 +318,12 @@ The creators and holders of these certificates are called certificate authoritie
 %   DISCUSSION
 %-------------------------------------------------------------
 \section{Discussion}
-By the above arguments it is clear that using public-key encryption on its own, does not provide data origin authentication, due to the fact that the encryption transformation is public information, where data origin authentication can be described as a mechanism where the data is authenticated. 
+By the above arguments it is clear that using public-key encryption on its own, does not provide data origin authentication, due to the fact that the encryption transformation is public information, where data origin authentication can be described as a mechanism where the data is authenticated. This leads to the 
 
+
+%-------------------------------------------------------------
+%   END OF DOCUMENT
+%-------------------------------------------------------------
 % The following two commands are all you need in the
 % initial runs of your .tex file to
 % produce the bibliography for the citations in your paper.

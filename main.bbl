@@ -5,4 +5,13 @@ v.~O. S.~V. A.~Menezes, P.
 \newblock Handbook of applied cryptography.
 \newblock 1996.
 
+\bibitem{code}
+H.~C. V.~T. Elwyn R.~Berlekamp, Robert J.~McEliece.
+\newblock On the inherent intractability of certain coding problems.
+\newblock 1978.
+
+\bibitem{rubin}
+P.~Feisthammel.
+\newblock Explanation of the web of trust of pgp, 7 Oct 2004.
+
 \end{thebibliography}
