@@ -295,15 +295,22 @@ In order connect a website to a person or an organization, i.e. to authenticate 
 \end{itemize}
 The creators and holders of these certificates are called certificate authorities (CA's). 
 
-\subsection{Distributed consensus algorithm}
+\subsection{Distributed consensus algorithm} % TA UPP NÅGON OM VAD CONSENSUS ÄR FÖRST?
+The general consensus problem can be described as a number of processes which are supposed to make a decision. Some of these processes may be unreliable which creates the need for the consensus algorithm to be fault tolerant. One way to achieve this is to choose the alternative which has the majority of the votes. % TODO: FIND REFERENCE
+
+% TODO: OM >50% KORRUPTA AV ALLA => BROKEN SYSTEM 
+
 
 \subsubsection{Bitcoin}
 % Mining
 % SHA-256 
+
+
 \subsubsection{Block-Chain Algorithm}
 
 \subsection{Web of Trust} % nyckelutbyte
-Web of trust is one solution to the problem with authentication in public-key encryption systems and is an alternative to the centralized trust model of public-key infrastructure which involved certificate authorities. The idea of the Web of trust-concept is that searching for another node in the network which has signed, i.e. confirmed that the public-key is legitimate. If such a node, $N_1$ is found, a path can be visualized from the initial node to $N_1$, together with the final node, which was the node to be verified. Since the path from initial node to the final node was found, the public key is verified. \\
+Web of trust is one solution to the problem with authentication in public-key encryption systems and is an alternative to the centralized trust model of public-key infrastructure which involved certificate authorities. It can be thought of as a network with companions, some that you trust and some that you do not trust. % FORTSÄTT BESKRIVNING 
+The idea of the Web of trust-concept is that searching for another node in the network which has signed, i.e. confirmed that the public-key is legitimate. If such a node, $N_1$ is found, a path can be visualized from the initial node to $N_1$, together with the final node, which was the node to be verified. Since the path from initial node to the final node was found, the public key is verified. \\
 Another functionality which can be used in Web of trust, is that nodes vote, instead of signing. When implementing the votes, some nodes may get higher priority during the voting due to the fact that some nodes can be partially trusted and other nodes can be fully trusted. \cite{rubin}
 
 
@@ -318,7 +325,7 @@ Another functionality which can be used in Web of trust, is that nodes vote, ins
 %   DISCUSSION
 %-------------------------------------------------------------
 \section{Discussion}
-By the above arguments it is clear that using public-key encryption on its own, does not provide data origin authentication, due to the fact that the encryption transformation is public information, where data origin authentication can be described as a mechanism where the data is authenticated. This leads to the 
+By the above arguments it is clear that using public-key encryption on its own, does not provide data origin authentication, due to the fact that the encryption transformation is public information, where data origin authentication can be described as a mechanism where the data is authenticated. %This leads to the ...
 
 
 %-------------------------------------------------------------
