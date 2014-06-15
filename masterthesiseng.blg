@@ -1,0 +1,41 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: masterthesiseng.aux
+The style file: ieeetr.bst
+Database file #1: sigproc.bib
+You're missing a field name---line 7 of file sigproc.bib
+ : 
+ : %    author  = "AUTHORNAME",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--entry type for "rubin" isn't style-file defined
+--line 26 of file sigproc.bib
+Warning--entry type for "tree" isn't style-file defined
+--line 89 of file sigproc.bib
+Warning--entry type for "extolabs" isn't style-file defined
+--line 122 of file sigproc.bib
+Warning--entry type for "ssh" isn't style-file defined
+--line 148 of file sigproc.bib
+Warning--entry type for "ssl" isn't style-file defined
+--line 155 of file sigproc.bib
+Warning--entry type for "nsabackdoor" isn't style-file defined
+--line 162 of file sigproc.bib
+Warning--entry type for "certificate" isn't style-file defined
+--line 184 of file sigproc.bib
+Warning--entry type for "namecoin" isn't style-file defined
+--line 191 of file sigproc.bib
+Warning--entry type for "domain2" isn't style-file defined
+--line 198 of file sigproc.bib
+Warning--entry type for "ike-rfc" isn't style-file defined
+--line 205 of file sigproc.bib
+Warning--entry type for "kerber-rfc" isn't style-file defined
+--line 212 of file sigproc.bib
+Warning--entry type for "bitcoin-attacks" isn't style-file defined
+--line 219 of file sigproc.bib
+Warning--entry type for "frenchCA" isn't style-file defined
+--line 235 of file sigproc.bib
+Warning--entry type for "dutchCA" isn't style-file defined
+--line 241 of file sigproc.bib
+A bad cross reference---entry "analysmce"
+refers to entry "conf/asiacrypt/1998", which doesn't exist
+Warning--I didn't find a database entry for "conf/asiacrypt/1998"
+Warning--empty institution in rabinorig
+(There were 2 error messages)

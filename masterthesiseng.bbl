@@ -1,0 +1,113 @@
+\begin{thebibliography}{10}
+
+\bibitem{handcrypt}
+A.~Menezes, P.~van Oorschot, and S.~Vanstone, {\em Handbook of Applied
+  Cryptography}.
+\newblock CRC Press, 2006.
+
+\bibitem{ssl}
+{Red Hat Software}, ``Ssl/tls, ecc, and rsa.''
+  \url{https://access.redhat.com/site/documentation/en-US/Red_Hat_Certificate_System/8.0/html/Deployment_Guide/SSL-TLS_ecc-and-rsa.html},
+  2014.
+
+\bibitem{ssh}
+{Van Dyke Software}, ``An overview of the secure shell (ssh).''
+  \url{http://www.vandyke.com/solutions/ssh_overview/ssh_overview.pdf}, 2008.
+
+\bibitem{nsabackdoor}
+M.~Joseph, ``Exclusive: Nsa infiltrated rsa security more deeply than thought -
+  study.''
+  \url{http://www.reuters.com/article/2014/03/31/us-usa-security-nsa-rsa-idUSBREA2U0TY20140331},
+  2014.
+
+\bibitem{rsasound}
+D.~Genkin, A.~Shamir, and E.~Tromer, ``Rsa key extraction via low-bandwidth
+  acoustic cryptanalysis.'' Cryptology ePrint Archive, Report 2013/857, 2013.
+\newblock \url{http://eprint.iacr.org/}.
+
+\bibitem{merklebroken}
+A.~Shamir and N.~Diffie, ``A polynomial-time algorithm for breaking the basic
+  merkle-hellman cryptosystem,'' in {\em In Proceedings of the 23rd IEEE
+  Symposium on Foundations of Computer Science}, pp.~145--152, IEEE, 1982.
+
+\bibitem{code}
+E.~Berlekamp, R.~McEliece, and H.~Van~Tilborg, ``On the inherent intractability
+  of certain coding problems,'' {\em Information Theory, IEEE Transactions on},
+  vol.~24, no.~3, pp.~384--386, 1978.
+
+\bibitem{attackdefence}
+D.~J. Bernstein, T.~Lange, and C.~Peters, ``Attacking and defending the
+  mceliece cryptosystem.'' Cryptology ePrint Archive, Report 2008/318, 2008.
+\newblock \url{http://eprint.iacr.org/}.
+
+\bibitem{analysmce}
+A.~Canteaut and N.~Sendrier, ``Cryptoanalysis of the original mceliece
+  cryptosystem.,'' in {\em ASIACRYPT} (K.~Ohta and D.~Pei, eds.), vol.~1514 of
+  {\em Lecture Notes in Computer Science}, pp.~187--199, Springer, 1998.
+
+\bibitem{rabinorig}
+M.~O. Rabin, ``Digitalized signatures and public-key functions as intractable
+  as factorization,'' tech. rep., Cambridge, MA, USA, 1979.
+
+\bibitem{ike-rfc}
+M.~Richardson, ``Opportunistic encryption using the internet key exchange
+  (ike).'' \url{http://tools.ietf.org/html/rfc4322}, December 2005.
+
+\bibitem{kerber-rfc}
+M.~Thomas, ``Requirements for kerberized internet negotiation of keys.''
+  \url{http://tools.ietf.org/html/rfc3129}, June 2001.
+
+\bibitem{math}
+A.~Joux, ``A new index calculus algorithm with complexity $l(1/4+o(1))$ in very
+  small characteristic.'' Cryptology ePrint Archive, Report 2013/095, 2013.
+\newblock \url{http://eprint.iacr.org/}.
+
+\bibitem{maninthemiddle}
+V.~Ramachandran, {\em BackTrack 5 Wireless Penetration Testing}.
+\newblock Packt Publishing, 2011.
+
+\bibitem{certificate}
+M.~Bendtsen, ``Identifiering och autentisering.''
+  \url{http://www.ida.liu.se/~TDDD82/slides/security/identifiering.pdf}, 2014.
+
+\bibitem{frenchCA}
+D.~Goodin, ``French agency caught minting ssl certificates impersonating
+  google.''
+  \url{http://arstechnica.com/security/2013/12/french-agency-caught-minting-ssl-certificates-impersonating-google/},
+  9 December 2013.
+
+\bibitem{dutchCA}
+Z.~Zeljka, ``Rogue ssl certs were also issued for cia, mi6, mossad.''
+  \url{http://www.net-security.org/secworld.php?id=11565}, 5 September 201.
+
+\bibitem{rubin}
+P.~Feisthammel, ``Explanation of the web of trust of pgp.''
+  \url{http://www.rubin.ch/pgp/weboftrust.en.html}, 7 Oct 2004.
+
+\bibitem{bitcoin}
+S.~Nakamoto, ``Bitcoin: A peer-to-peer electronic cash system,'' 2009.
+
+\bibitem{domain2}
+``Domain names v2.0.'' \url{http://dot-bit.org/Namespace:Domain_names_v2.0},
+  2014.
+
+\bibitem{Namecoin}
+``Namecoin wiki.'' \url{https://wiki.namecoin.info}, 2014.
+
+\bibitem{tree}
+B.~Schneier, ``Modeling security threats.''
+  \url{https://www.schneier.com/paper-attacktrees-ddj-ft.html}, 1999.
+
+\bibitem{extolabs}
+Extolabs, ``Ex1 specification.'' \url{http://www.extolabs.com/product-ex1},
+  2014.
+
+\bibitem{hashratespending}
+M.~Rosenfeld, ``Analysis of hashrate-based double spending,'' {\em CoRR},
+  vol.~abs/1402.2009, 2014.
+
+\bibitem{bitcoin-attacks}
+``Weaknesses of bitcoin.'' \url{https://en.bitcoin.it/wiki/Weaknesses}, 28
+  December 2013.
+
+\end{thebibliography}

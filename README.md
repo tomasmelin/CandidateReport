@@ -1,3 +1,0 @@
-CandidateReport
-  Written in LaTeX
-==========

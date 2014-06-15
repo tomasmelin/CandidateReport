@@ -1,0 +1,38 @@
+\select@language {english}
+\vskip -40pt
+\contentsline {chapter}{\numberline {1}Introduction}{2}
+\contentsline {section}{\numberline {1.1}Motivation and purpose}{2}
+\contentsline {subsection}{\numberline {1.1.1}Questions of interest}{2}
+\contentsline {chapter}{\numberline {2}Historical review}{3}
+\contentsline {section}{\numberline {2.1}Public-key encryption schemes}{3}
+\contentsline {subsection}{\numberline {2.1.1}RSA public-key encryption}{3}
+\contentsline {subsection}{\numberline {2.1.2}Merkle-Hellman knapsack encryption}{5}
+\contentsline {subsection}{\numberline {2.1.3}McEliece public-key encryption}{6}
+\contentsline {subsection}{\numberline {2.1.4}Rabin public-key encryption}{6}
+\contentsline {subsection}{\numberline {2.1.5}Diffie-Hellman key exchange}{6}
+\contentsline {section}{\numberline {2.2}The mathematical problem}{7}
+\contentsline {section}{\numberline {2.3}Authentication}{8}
+\contentsline {subsection}{\numberline {2.3.1}Man-in-the-middle attack}{8}
+\contentsline {subsection}{\numberline {2.3.2}Certificates and certificate authorities}{9}
+\contentsline {subsection}{\numberline {2.3.3}Web of trust}{10}
+\contentsline {section}{\numberline {2.4}Summary of historical review}{11}
+\contentsline {chapter}{\numberline {3}Namecoin for authentication}{12}
+\contentsline {section}{\numberline {3.1}Theory}{12}
+\contentsline {subsection}{\numberline {3.1.1}Transactions}{12}
+\contentsline {subsection}{\numberline {3.1.2}The block}{12}
+\contentsline {subsection}{\numberline {3.1.3}The chain}{12}
+\contentsline {subsection}{\numberline {3.1.4}Creating a block}{13}
+\contentsline {subsection}{\numberline {3.1.5}Network}{13}
+\contentsline {subsection}{\numberline {3.1.6}Namecoin}{14}
+\contentsline {section}{\numberline {3.2}Method}{15}
+\contentsline {subsection}{\numberline {3.2.1}Finding the threats against the Namecoin system}{16}
+\contentsline {section}{\numberline {3.3}Results}{16}
+\contentsline {subsection}{\numberline {3.3.1}Attacks}{17}
+\contentsline {subsection}{\numberline {3.3.2}System flaws}{20}
+\contentsline {subsection}{\numberline {3.3.3}Psychological attacks}{20}
+\contentsline {section}{\numberline {3.4}Discussion}{20}
+\contentsline {subsection}{\numberline {3.4.1}Risk analysis}{20}
+\contentsline {subsection}{\numberline {3.4.2}Comparison to current authentication mechanisms}{21}
+\contentsline {subsection}{\numberline {3.4.3}A broader perspective}{21}
+\contentsline {section}{\numberline {3.5}Conclusions}{22}
+\contentsline {chapter}{\numberline {A}Figures}{25}
